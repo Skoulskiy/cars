@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Poppins:wght@400;500;700&display=swap');
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background: #000;
+    font: 16px/28px 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    transition: .4s;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn-primary {
+    background: #EE8313;
+    padding: 12px 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    padding: 12px 24px;
+    font-weight: 600;
+    color: #EE8313;
+    border: 1px solid #EE8313;
+    line-height: 24px;
+}
+
+.btn-primary:hover{
+    background-color: #e95703;
+}
+
+.section-title {
+    font-size: 52px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 0.6px;
+    margin-bottom: 40px;
+}
+
+/* Header */
+#header-section {
+    padding: 40px 0 107px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.header-logo__img {
+    width: 48px;
+    height: 48px;
+}
+
+.nav-main {
+    margin-left: auto;
+}
+
+.nav-main__list {
+    display: flex;
+    gap: 48px;
+    margin-right: 72px;
+}
+
+.nav-main__link:hover {
+    color: #EE8313;
+}
+
+/* BANNER */
+
+#banner-section {
+    padding-bottom: 60px;
+    overflow: hidden;
+    position: relative;
+}
+.banner {
+    max-width: 475px;
+    padding-bottom: 60px;
+}
+
+.banner__header {
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.6px;
+}
+
+.banner__text {
+    margin: 32px 0 48px;
+    font-size: 17px;
+    opacity: 0.8;
+}
+
+.banner-links-wrap {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.banner-features__text {
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.banner-features__text_strong {
+    font-weight: 700;
+    line-height: 52px;
+    font-size: 40px;
+    margin-right: 16px;
+    vertical-align: sub;
+}
+
+.banner-features__text:first-child {
+    margin-right: 40px;
+}
+
+.banner-img::before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 46%;
+    height: 100%;
+    background: url("../img/baner-main.png") no-repeat;
+}
+.banner-img::after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 34%;
+    height: 100%;
+    background-color: rgb(52 52 52 / 30%);
+}
+/* Rent */
+#rent-section {
+    padding: 120px 0;
+}
+
+.rent-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.rent {
+    position: relative;
+    height: 524px;
+    background: url("../img/rent.jpg") 50%/cover;
+    font-weight: 600;
+}
+
+.rent:nth-child(2) {
+    background: url("../img/rent_2.jpg") 50%/cover;
+}
+.rent:nth-child(3) {
+    background: url("../img/rent_3.jpg") 50%/cover;
+}
+.rent:nth-child(4) {
+    background: url("../img/rent_4.jpg") 50%/cover;
+}
+
+.rent__title {
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    font-size: 40px;
+    letter-spacing: 0.6px;
+}
+
+.rent__link{
+    position: absolute;
+    right: 60px;
+    bottom: 48px;
+    font-size: 24px;
+    padding-right: 30px;
+}
+
+.rent__link:hover {
+    color: #FFCC2C;
+}
+
+.rent__link::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    width: 8px;
+    height: 16px;
+    background: url("../img/arrow.svg") 50%/cover no-repeat;
+    transform: translateY(-50%);
+}
+
+/* services */
+
+#sevices-section {
+    padding-bottom: 120px;
+}
+
+.serivces-section__title {
+    text-align: left;
+    margin-bottom: 66px;
+}
+
+.services-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.services__img {
+    margin-bottom: 24px;
+}
+
+.services__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.services__text {
+    opacity: 0.8;
+}
+
+/* destination */
+
+#destination-section {
+    padding-bottom: 162px;
+}
+
+.destination-section__title {
+    width: 590px;
+    margin: 0 auto 40px;
+}
+
+.destination-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.destination {
+    background: #171717;
+}
+
+.destination-info {
+    padding: 24px;
+}
+
+.destination__title {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.destination__text {
+    margin: 10px 0 25px;
+    opacity: 0.8;
+}
+
+.destination__price {
+    position: relative;
+    padding-left: 42px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+.destination__link {
+    color: #EE8313;
+}
+
+.destination__link:hover {
+    color: #FFCC2C;
+}
+
+.destination__price::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    background: url("../img/car_icon.svg") no-repeat;
+}
+
+/* location */
+#location-section {
+    padding-bottom: 102px;
+}
+
+/* footer */
+#footer-section {
+    padding-top: 40px;
+    background-color: #1f1905;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 65px;
+}
+
+.footer-logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 64px;
+}
+
+.footer-about__img {
+    width: 48px;
+    height: 48px;
+}
+
+.footer-about__text {
+    line-height: 32px;
+    font-size: 18px;
+    max-width: 235px;
+}
+
+.footer-nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+    margin: 40px 100px 0 auto;
+}
+
+.footer-nav__header {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.footer-nav__item {
+    margin-bottom: 28px;
+    line-height: 20px;
+    opacity: 0.8;
+}
+
+.footer-nav__link {
+    opacity: 0.8;
+}
+
+.footer-nav__link:hover {
+    color: #EE8313;
+}
+.footer-social__link {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 45px;
+    background: url("../img/social_1.svg") 50%/cover no-repeat;
+}
+
+.footer-social__link:nth-child(2){
+    background: url("../img/social_2.svg") 50%/cover no-repeat;
+}
+
+.footer-social__link:nth-child(3){
+    background: url("../img/social_3.svg") 50%/cover no-repeat;
+}
+.footer-social{ 
+    margin-top: 32px;
+}
+
+.footer-copyright {
+    padding: 20px 0;
+    background: #EE8313;
+}
+
+.footer-copyright__text {
+    text-align: center;
+}
